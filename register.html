@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Register - MediFind</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            💊 MediFind
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="how-it-works.html">How it work</a>
+
+            <a href="login.html">Login</a>
+
+            <a href="register.html">Register</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Registration Section -->
+    <section class="register-section">
+
+        <div class="register-card">
+
+            <h1>Create Account</h1>
+
+            <p class="register-subtitle">
+                Join MediFind today
+            </p>
+
+
+            <form id="registerForm"
+            onsubmit="registerUser(event)" action="register.php" method="post">
+
+                <!-- Full Name -->
+                <label for="fullName">Full Name</label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter your full name"
+                >
+
+            <div id="pharmacyFields" style="display: none;">
+
+            <label for="pharmacyName">Pharmacy Name</label>
+
+                <input
+                type="text"
+                id="pharmacyName"
+                name="pharmacyName"
+                placeholder="Enter pharmacy name"
+                >
+
+    <label for="address">Pharmacy Address</label>
+
+    <input
+        type="text"
+        id="address"
+        name="address"
+        placeholder="Enter pharmacy address"
+    >
+
+</div>
+
+
+                <!-- Email -->
+                <label for="registerEmail">Email Address</label>
+
+                <input
+                    type="email"
+                    id="registerEmail"
+                    name="registerEmail"
+                    placeholder="Enter your email"
+                >
+
+
+                <!-- Mobile -->
+                <label for="mobile">Mobile Number</label>
+
+                <input
+                    type="tel"
+                    id="mobile"
+                    name="mobile"
+                    placeholder="Enter your mobile number"
+                >
+
+
+                <!-- Password -->
+                <label for="registerPassword">Password</label>
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    name="registerPassword"
+                    placeholder="Create a password"
+                >
+
+
+                <!-- Confirm Password -->
+                <label for="confirmPassword">Confirm Password</label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Re-enter your password"
+                >
+
+
+                <!-- Account Type -->
+                <h3 class="account-title">
+                    Choose Account Type
+                </h3>
+
+
+                <div class="account-types">
+
+                    <label class="account-option">
+
+                        <input
+                            type="radio"
+                            name="accountType"
+                            value="customer"
+                            onchange="showPharmacyFields()"
+                        >
+
+                        <div class="account-content">
+
+                            <span class="account-icon">👤</span>
+
+                            <strong>Customer</strong>
+
+                            <small>
+                                Find medicines near you
+                            </small>
+
+                        </div>
+
+                    </label>
+
+
+                    <label class="account-option">
+
+                        <input
+                            type="radio"
+                            name="accountType"
+                            value="pharmacy"
+                            onchange="showPharmacyFields()"
+                        >
+
+                        <div class="account-content">
+
+                            <span class="account-icon">🏪</span>
+
+                            <strong>Pharmacy</strong>
+
+                            <small>
+                                Manage medicine availability
+                            </small>
+
+                        </div>
+
+                    </label>
+
+                </div>
+
+
+                <!-- Message -->
+                <p id="registerMessage"></p>
+
+
+                <button type="submit">
+                    Create Account
+                </button>
+
+
+                <p class="login-text">
+
+                    Already have an account?
+
+                    <a href="login.html">
+                        Login
+                    </a>
+
+                </p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 MediFind. All rights reserved.</p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

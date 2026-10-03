@@ -1,0 +1,1894 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   WHOLE WEBPAGE
+   ========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f9f8;
+    color: #183b35;
+}
+
+
+/* =========================
+   NAVIGATION BAR
+   ========================= */
+
+.navbar {
+    background-color: #0d3b34;
+    padding: 18px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   MAIN HERO SECTION
+   ========================= */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+
+.hero p {
+    font-size: 18px;
+    color: #55716b;
+}
+
+
+/* =========================
+   SEARCH BOX
+   ========================= */
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+
+.search-box input {
+    width: 550px;
+    padding: 17px;
+
+    border: 1px solid #c8d8d4;
+    border-radius: 8px 0 0 8px;
+
+    font-size: 16px;
+}
+
+
+.search-box button {
+    padding: 17px 25px;
+
+    border: none;
+
+    background-color: #287d6b;
+    color: white;
+
+    font-size: 16px;
+
+    border-radius: 0 8px 8px 0;
+
+    cursor: pointer;
+}
+
+
+.search-box button:hover {
+    background-color: #1f6355;
+}
+
+
+.search-note {
+    margin-top: 20px;
+}
+
+
+/* =========================
+   HOW IT WORKS
+   ========================= */
+
+.how-section {
+    background-color: white;
+    text-align: center;
+    padding: 60px 7%;
+}
+
+
+.how-section h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.step {
+    width: 280px;
+
+    padding: 30px 20px;
+
+    border: 1px solid #d9e5e2;
+    border-radius: 12px;
+
+    background-color: #f8fcfb;
+}
+
+
+.step-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+
+.step h3 {
+    margin-bottom: 10px;
+}
+
+
+.step p {
+    color: #607873;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   PHARMACY SECTION
+   ========================= */
+
+.pharmacy-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+
+.pharmacy-section h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+.pharmacy-section p {
+    margin-bottom: 25px;
+    color: #55716b;
+}
+
+
+.pharmacy-button {
+    display: inline-block;
+
+    background-color: #0d3b34;
+    color: white;
+
+    padding: 13px 22px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+}
+
+
+.pharmacy-button:hover {
+    background-color: #1f6355;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #0d3b34;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   SEARCH MESSAGE
+   ========================= */
+
+#searchMessage {
+    margin: 15px auto 0;
+
+    width: fit-content;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    display: none;
+
+    animation: messageAppear 0.3s ease;
+}
+
+
+#searchMessage.warning {
+    display: block;
+
+    background-color: #fff4e5;
+    color: #9a5b00;
+
+    border: 1px solid #ffd59a;
+}
+
+
+#searchMessage.searching {
+    display: block;
+
+    background-color: #eaf6f3;
+    color: #176b5b;
+
+    border: 1px solid #b9ded5;
+}
+
+
+@keyframes messageAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   LOGIN PAGE
+   ========================= */
+
+.login-section {
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+
+.login-card {
+    width: 420px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.login-card h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.login-subtitle {
+    text-align: center;
+
+    color: #607873;
+
+    margin-bottom: 30px;
+}
+
+
+.login-card label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+
+.login-card input {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #c8d8d4;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+}
+
+
+.login-card input:focus {
+    outline: none;
+
+    border-color: #287d6b;
+}
+
+
+.login-card button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #287d6b;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.login-card button:hover {
+    background-color: #1f6355;
+}
+
+
+.register-text {
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #607873;
+}
+
+
+.register-text a {
+    color: #287d6b;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   REGISTER PAGE
+   ========================= */
+
+.register-section {
+    min-height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+
+.register-card {
+    width: 480px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.register-card h1 {
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+
+.register-subtitle {
+    text-align: center;
+
+    color: #607873;
+
+    margin-bottom: 30px;
+}
+
+
+.register-card label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+
+.register-card input[type="text"],
+.register-card input[type="email"],
+.register-card input[type="tel"],
+.register-card input[type="password"] {
+
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #c8d8d4;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+}
+
+
+.register-card input:focus {
+    outline: none;
+
+    border-color: #287d6b;
+}
+
+
+/* Account Type */
+
+.account-title {
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+
+.account-types {
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.account-option {
+    flex: 1;
+
+    border: 1px solid #c8d8d4;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    cursor: pointer;
+
+    margin: 0;
+}
+
+
+.account-option:hover {
+    border-color: #287d6b;
+
+    background-color: #f5fbf9;
+}
+
+
+.account-option input[type="radio"] {
+    display: none;
+}
+
+
+.account-option:has(input:checked) {
+    border: 2px solid #287d6b;
+
+    background-color: #eaf6f3;
+}
+
+
+.account-content {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    gap: 6px;
+}
+
+
+.account-icon {
+    font-size: 30px;
+}
+
+
+.account-content strong {
+    font-size: 16px;
+}
+
+
+.account-content small {
+    color: #607873;
+}
+
+
+/* Register button */
+
+.register-card button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #287d6b;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.register-card button:hover {
+    background-color: #1f6355;
+}
+
+
+/* Register message */
+
+#registerMessage {
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    font-size: 14px;
+}
+
+
+/* Login link */
+
+.login-text {
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #607873;
+}
+
+
+.login-text a {
+    color: #287d6b;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   LOGIN VALIDATION
+   ========================= */
+
+#loginMessage {
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    font-size: 14px;
+}
+
+
+.login-warning {
+    color: #9a5b00;
+
+    background-color: #fff4e5;
+
+    border: 1px solid #ffd59a;
+
+    padding: 10px;
+
+    border-radius: 7px;
+}
+
+
+.login-success {
+    color: #176b5b;
+
+    background-color: #eaf6f3;
+
+    border: 1px solid #b9ded5;
+
+    padding: 10px;
+
+    border-radius: 7px;
+}
+
+
+/* =========================
+   MEDICINE SEARCH RESULTS
+   ========================= */
+
+.results-section {
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 50px auto;
+
+    text-align: center;
+}
+
+
+.results-section h1 {
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+
+.results-subtitle {
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+#medicineResults {
+    display: grid;
+
+    gap: 20px;
+}
+
+
+.pharmacy-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    text-align: left;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid #e5e5e5;
+}
+
+
+.pharmacy-card h2 {
+    margin-top: 0;
+
+    font-size: 20px;
+}
+
+
+.pharmacy-card h3 {
+    margin-bottom: 10px;
+}
+
+
+.pharmacy-card p {
+    color: #555;
+
+    margin: 8px 0;
+}
+
+
+.pharmacy-card .status {
+    font-weight: bold;
+}
+
+
+.pharmacy-card button {
+    margin-top: 15px;
+
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    background-color: #176b5b;
+
+    color: white;
+}
+
+
+.pharmacy-card button:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================
+   CATEGORIES
+   ========================= */
+
+.categories-section {
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+
+.categories-section h2 {
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+
+.categories-section p {
+    color: #666;
+}
+
+
+.category-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+
+.category-card {
+    width: 200px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.category-icon {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+
+.category-card h3 {
+    margin-bottom: 8px;
+}
+
+
+.category-container a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+/* =========================
+   TABLET PAGE
+   ========================= */
+
+.tablet-page {
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+
+.tablet-page h1 {
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+
+.tablet-page p {
+    color: #666;
+
+    font-size: 18px;
+}
+
+
+.back-home {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    text-decoration: none;
+
+    background-color: #0f4c45;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 6px;
+}
+
+
+/* =========================
+   GENERAL MEDICINE CARDS
+   ========================= */
+
+.medicine-card {
+    width: 220px;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.medicine-card h3 {
+    color: #333;
+}
+
+
+.medicine-card p {
+    color: #666;
+}
+
+
+/* ==================================================
+   PHARMACY DASHBOARD
+   ================================================== */
+
+
+/* Top dashboard navbar */
+
+.dashboard-navbar {
+    min-height: 70px;
+
+    background-color: #0f4c45;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 40px;
+}
+
+
+.dashboard-logo {
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+
+.pharmacy-user {
+    font-size: 17px;
+}
+
+
+/* Dashboard main container */
+
+.dashboard-container {
+    display: flex;
+
+    min-height: 650px;
+
+    background-color: #f5f7f7;
+}
+
+
+/* Sidebar */
+
+.dashboard-sidebar {
+    width: 230px;
+
+    flex-shrink: 0;
+
+    background-color: white;
+
+    padding: 30px 15px;
+
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.dashboard-sidebar h3 {
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    color: #0f4c45;
+}
+
+
+.dashboard-sidebar a {
+    display: block;
+
+    padding: 14px 18px;
+
+    margin-bottom: 8px;
+
+    text-decoration: none;
+
+    color: #444;
+
+    border-radius: 8px;
+}
+
+
+.dashboard-sidebar a:hover,
+.dashboard-sidebar a.active {
+    background-color: #e3f3f0;
+
+    color: #0f4c45;
+}
+
+
+/* Dashboard content */
+
+.dashboard-main {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 35px;
+}
+
+
+/* Welcome */
+
+.welcome-box {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 25px;
+}
+
+
+.welcome-box h1 {
+    color: #0f4c45;
+
+    margin-bottom: 8px;
+}
+
+
+.welcome-box p {
+    color: #666;
+}
+
+
+/* =========================
+   DASHBOARD STATISTICS
+   ========================= */
+
+.dashboard-stats {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+.stat-card {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.stat-icon {
+    font-size: 35px;
+}
+
+
+.stat-card h3 {
+    font-size: 15px;
+
+    color: #666;
+
+    margin: 0 0 5px;
+}
+
+
+.stat-card p {
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #0f4c45;
+
+    margin: 0;
+}
+
+
+/* =========================
+   MEDICINE MANAGEMENT
+   ========================= */
+
+.medicine-management {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.medicine-management h2 {
+    color: #0f4c45;
+
+    margin-bottom: 8px;
+}
+
+
+.medicine-management p {
+    color: #666;
+}
+
+
+/* Add medicine button */
+
+.add-medicine-btn {
+    display: inline-block;
+
+    background-color: #0f4c45;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+
+.add-medicine-btn:hover {
+    background-color: #083832;
+}
+
+
+/* ==================================================
+   YOUR MEDICINES SECTION
+   ================================================== */
+
+
+/*
+   IMPORTANT:
+   Only ONE .medicine-list exists now.
+   This prevents the old flex layout
+   from affecting the dashboard.
+*/
+
+.medicine-list {
+    width: 100%;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.medicine-list > h2 {
+    color: #0f4c45;
+
+    margin-bottom: 20px;
+
+    font-size: 25px;
+}
+
+
+/* Individual medicine */
+
+.medicine-item {
+    width: 100%;
+
+    min-height: 120px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    background-color: #fbfdfd;
+
+    border: 1px solid #dce8e5;
+
+    border-radius: 12px;
+
+    transition: 0.2s;
+}
+
+
+.medicine-item:last-child {
+    margin-bottom: 0;
+}
+
+
+.medicine-item:hover {
+    border-color: #a9ccc4;
+
+    box-shadow: 0 4px 12px rgba(15, 76, 69, 0.08);
+
+    transform: translateY(-2px);
+}
+
+
+/* Medicine information */
+
+.medicine-item > div:first-child {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.medicine-item h3 {
+    margin-bottom: 8px;
+
+    color: #183b35;
+
+    font-size: 20px;
+}
+
+
+.medicine-item p {
+    margin: 5px 0;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* Medicine status */
+
+.medicine-status {
+    flex-shrink: 0;
+
+    padding: 9px 18px;
+
+    border-radius: 25px;
+
+    background-color: #e3f3f0;
+
+    color: #0f4c45;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    text-align: center;
+
+    min-width: 120px;
+}
+
+
+/* Available status */
+
+.medicine-status.available {
+    background-color: #e3f7ed;
+
+    color: #147a4b;
+}
+
+
+/* Limited stock status */
+
+.medicine-status.limited {
+    background-color: #fff4df;
+
+    color: #a56300;
+}
+
+
+/* Out of stock status */
+
+.medicine-status.out {
+    background-color: #fde8e8;
+
+    color: #b42318;
+}
+
+
+/* =========================
+   EMPTY MEDICINE
+   ========================= */
+
+.empty-medicine {
+    background-color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.empty-icon {
+    font-size: 50px;
+
+    margin-bottom: 10px;
+}
+
+
+.empty-medicine h2 {
+    color: #333;
+
+    margin-bottom: 10px;
+}
+
+
+.empty-medicine p {
+    color: #777;
+
+    margin-bottom: 20px;
+}
+
+
+/* ==================================================
+   DASHBOARD MOBILE
+   ================================================== */
+
+@media (max-width: 1000px) {
+
+    .dashboard-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    /* Navbar */
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .nav-links {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    /* Hero */
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+
+    /* Search */
+
+    .search-box {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .search-box input {
+        width: 90%;
+
+        border-radius: 8px;
+    }
+
+
+    .search-box button {
+        margin-top: 10px;
+
+        border-radius: 8px;
+    }
+
+
+    /* Steps */
+
+    .steps {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .step {
+        width: 90%;
+    }
+
+
+    /* Login */
+
+    .login-card {
+        width: 100%;
+
+        max-width: 420px;
+
+        padding: 30px 25px;
+    }
+
+
+    /* Register */
+
+    .register-card {
+        width: 100%;
+
+        padding: 30px 25px;
+    }
+
+
+    .account-types {
+        flex-direction: column;
+    }
+
+
+    /* Dashboard navbar */
+
+    .dashboard-navbar {
+        padding: 15px 20px;
+
+        flex-direction: column;
+
+        gap: 8px;
+
+        text-align: center;
+    }
+
+
+    /* Dashboard layout */
+
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+
+    .dashboard-sidebar {
+        width: 100%;
+
+        padding: 15px;
+    }
+
+
+    .dashboard-sidebar h3 {
+        margin-bottom: 12px;
+    }
+
+
+    .dashboard-sidebar a {
+        padding: 10px 15px;
+
+        margin-bottom: 5px;
+    }
+
+
+    .dashboard-main {
+        padding: 20px;
+    }
+
+
+    /* Dashboard stats */
+
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Medicine management */
+
+    .medicine-management {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .medicine-management .add-medicine-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* Medicine item */
+
+    .medicine-item {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .medicine-status {
+        width: 100%;
+    }
+
+
+    /* Results */
+
+    .results-section {
+        width: 95%;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL SCREEN
+   ========================= */
+
+@media (max-width: 450px) {
+
+    .dashboard-main {
+        padding: 12px;
+    }
+
+
+    .medicine-list {
+        padding: 15px;
+    }
+
+
+    .medicine-item {
+        padding: 15px;
+    }
+
+
+    .medicine-item h3 {
+        font-size: 18px;
+    }
+
+
+    .welcome-box {
+        padding: 20px;
+    }
+
+
+    .stat-card {
+        padding: 15px;
+    }
+
+}
+
+.edit-medicine-btn {
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 8px 15px;
+
+    background-color: #287d6b;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+}
+
+
+.edit-medicine-btn:hover {
+
+    background-color: #1f6355;
+
+}
+
+.edit-medicine-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #287d6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.edit-medicine-btn:hover {
+    background-color: #1f6355;
+}
+
+
+.delete-medicine-btn {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 8px 14px;
+    background-color: #c0392b;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.delete-medicine-btn:hover {
+    background-color: #a93226;
+}
+
+/* ============================= */
+/* Search Result Availability */
+/* ============================= */
+
+.pharmacy-card .status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Available */
+
+.pharmacy-card .status.available {
+    background-color: #e3f7ed;
+    color: #16734b;
+    border: 1px solid #a9dfc5;
+}
+
+
+/* Limited Stock */
+
+.pharmacy-card .status.limited {
+    background-color: #fff4e5;
+    color: #9a5b00;
+    border: 1px solid #ffd59a;
+}
+
+
+/* Out of Stock */
+
+.pharmacy-card .status.out {
+    background-color: #fdeaea;
+    color: #a33a3a;
+    border: 1px solid #f1b5b5;
+}
+
+/* ============================= */
+/* Result Search Box */
+/* ============================= */
+
+.result-search-box {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto 35px;
+    max-width: 650px;
+}
+
+.result-search-box input {
+    flex: 1;
+    padding: 14px 16px;
+    border: 1px solid #c8d8d4;
+    border-radius: 8px 0 0 8px;
+    font-size: 16px;
+}
+
+.result-search-box input:focus {
+    outline: none;
+    border-color: #287d6b;
+}
+
+.result-search-box button {
+    padding: 14px 22px;
+    border: none;
+    background-color: #287d6b;
+    color: white;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.result-search-box button:hover {
+    background-color: #1f6355;
+}
+
+
+@media (max-width: 600px) {
+
+    .result-search-box {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .result-search-box input {
+        border-radius: 8px;
+    }
+
+    .result-search-box button {
+        margin-top: 10px;
+        border-radius: 8px;
+    }
+
+}
+
+/* ============================= */
+/* Medicines Dashboard */
+/* ============================= */
+
+.medicine-list-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.dashboard-medicine-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.medicine-card-icon {
+    font-size: 45px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.medicine-card-info h2 {
+    margin: 0 0 10px;
+    color: #164e4a;
+}
+
+.medicine-card-info p {
+    margin: 7px 0;
+    color: #666;
+}
+
+.status-available {
+    color: #198754;
+    font-weight: bold;
+}
+
+.status-limited {
+    color: #d68b00;
+    font-weight: bold;
+}
+
+.status-out {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* ============================= */
+/* Availability Page */
+/* ============================= */
+
+.availability-section {
+    margin-top: 25px;
+}
+
+.availability-header {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.availability-header h2 {
+    margin: 0 0 8px;
+    color: #164e4a;
+}
+
+.availability-header p {
+    margin: 0;
+    color: #777;
+}
+
+.availability-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.availability-card {
+    background: white;
+    padding: 22px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.availability-icon {
+    font-size: 40px;
+}
+
+.availability-info {
+    flex: 1;
+}
+
+.availability-info h2 {
+    margin: 0 0 7px;
+    color: #164e4a;
+}
+
+.availability-info p {
+    margin: 0;
+    color: #777;
+}
+
+.availability-status {
+    font-size: 16px;
+}
+
+.map-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 16px;
+    background-color: #0f4c45;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.map-button:hover {
+    background-color: #176b61;
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+
+/* Login Account Type */
+
+.account-type {
+    display: flex;
+    gap: 20px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.account-option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #444;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.account-option input {
+    width: auto;
+    margin: 0;
+}
